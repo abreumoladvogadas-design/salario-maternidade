@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="image-slot.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  @keyframes floatUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes softPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+</style>
+</helmet>
+
+<div style="background: #f7ece9; color: #423a3d; font-family: 'Poppins', sans-serif; min-height: 100vh; overflow-x: hidden;">
+
+  <!-- ===== HEADER ===== -->
+  <header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 1140px; margin: 0 auto; padding: 18px 22px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <div style="width: 46px; height: 46px; border-radius: 50%; background: #6e615f; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 22px; letter-spacing: 1px; color: #cf94a1; line-height: 1;">AM</span>
+      </div>
+      <div style="line-height: 1.05;">
+        <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: #564b4a; letter-spacing: 0.5px;">Abreu<span style="color: #cf94a1; padding: 0 5px;">|</span>Mol</div>
+        <div style="font-size: 9px; letter-spacing: 4px; color: #9c8d8a; font-weight: 500; margin-top: 1px;">ADVOGADAS</div>
+      </div>
+    </div>
+    <a href="https://wa.me/5533998740709?text=Ol%C3%A1%20Vivian!%20Estou%20gestante%20e%20gostaria%20de%20receber%20o%20meu%20sal%C3%A1rio%20maternidade." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; background: #2e7d57; color: #fff; text-decoration: none; padding: 11px 18px; border-radius: 100px; font-size: 14px; font-weight: 600; box-shadow: 0 8px 20px -8px rgba(46,125,87,0.5);">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm-3.6 4.43c-.17 0-.45.06-.68.31-.23.25-.9.88-.9 2.15 0 1.27.92 2.49 1.05 2.66.13.17 1.8 2.75 4.36 3.86.61.26 1.08.42 1.45.54.61.19 1.17.16 1.6.1.49-.07 1.5-.61 1.71-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.17-.49-.3-.25-.13-1.5-.74-1.73-.82-.23-.08-.4-.13-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.38-.78-1.88-.2-.48-.41-.42-.57-.43h-.49z"/></svg>
+      WhatsApp
+    </a>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section style="max-width: 1140px; margin: 0 auto; padding: 14px 22px 56px;">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 44px;">
+
+      <div style="flex: 1 1 360px; min-width: 300px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: #f0dcdb; color: #8c4a5b; padding: 8px 15px; border-radius: 100px; font-size: 11.5px; font-weight: 600; letter-spacing: 1.5px; margin-bottom: 22px;">
+          <span style="width: 7px; height: 7px; border-radius: 50%; background: #a85f70; display: inline-block;"></span>
+          SALÁRIO MATERNIDADE PARA GESTANTES
+        </div>
+        <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 6vw, 60px); line-height: 1.04; color: #463c40; margin: 0 0 22px; letter-spacing: -0.5px;">
+          Você cuida da sua <em style="font-style: italic; color: #a85f70;">gravidez.</em> Eu cuido do seu <em style="font-style: italic; color: #a85f70;">direito.</em>
+        </h1>
+        <p style="font-size: 16.5px; line-height: 1.65; color: #6a5d60; max-width: 480px; margin: 0 0 30px; font-weight: 300;">
+          Está grávida? O melhor momento para garantir o seu <strong style="font-weight: 600; color: #574a4d;">salário maternidade</strong> é agora, durante a gestação. Assim, quando o seu bebê chegar, o seu benefício já está garantido — e você vive esse momento com tranquilidade.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
+          <a href="https://wa.me/5533998740709?text=Ol%C3%A1%20Vivian!%20Estou%20gestante%20e%20gostaria%20de%20receber%20o%20meu%20sal%C3%A1rio%20maternidade." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #2e7d57; color: #fff; text-decoration: none; padding: 16px 26px; border-radius: 100px; font-size: 16px; font-weight: 600; box-shadow: 0 14px 30px -10px rgba(46,125,87,0.55);">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm-3.6 4.43c-.17 0-.45.06-.68.31-.23.25-.9.88-.9 2.15 0 1.27.92 2.49 1.05 2.66.13.17 1.8 2.75 4.36 3.86.61.26 1.08.42 1.45.54.61.19 1.17.16 1.6.1.49-.07 1.5-.61 1.71-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.17-.49-.3-.25-.13-1.5-.74-1.73-.82-.23-.08-.4-.13-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.38-.78-1.88-.2-.48-.41-.42-.57-.43h-.49z"/></svg>
+            Quero meu salário maternidade
+          </a>
+          <a href="#como-funciona" style="display: inline-flex; align-items: center; gap: 8px; background: transparent; color: #8c4a5b; text-decoration: none; padding: 16px 22px; border-radius: 100px; font-size: 16px; font-weight: 600; border: 1.5px solid #d8b3ba;">
+            Como funciona
+          </a>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; margin-top: 22px; font-size: 13.5px; color: #8a7c7e; font-weight: 400;">
+          <span style="color: #a85f70;">♡</span> Atendimento 100% online — seu direito não tem distância
+        </div>
+      </div>
+
+      <div style="flex: 1 1 320px; min-width: 280px; position: relative;">
+        <div style="position: absolute; inset: -14px -14px auto auto; width: 130px; height: 130px; background: #f0dcdb; border-radius: 50%; z-index: 0;"></div>
+        <div style="position: absolute; left: -18px; bottom: 24px; width: 78px; height: 78px; background: #cf94a1; border-radius: 50%; z-index: 0; opacity: 0.55;"></div>
+        <image-slot id="vivian-hero" style="display: block; position: relative; z-index: 1; width: 100%; height: auto; aspect-ratio: 1089 / 1444; border-radius: 26px; box-shadow: 0 30px 60px -24px rgba(110,80,80,0.45);" shape="rounded" radius="26" src="foto-hero-bebes-pro.jpg" placeholder="Foto da Vivian com os bebês"></image-slot>
+        <div style="position: relative; z-index: 2; margin: -34px auto 0; width: max-content; max-width: 92%; background: #fffdfb; border-radius: 16px; padding: 14px 20px; box-shadow: 0 16px 34px -16px rgba(110,80,80,0.4); text-align: center;">
+          <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 19px; color: #a85f70; line-height: 1.2;">"Eu fiz o salário maternidade deles.</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 19px; color: #564b4a; line-height: 1.2;">Posso fazer o seu também!"</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== O DIREITO / INTRO ===== -->
+  <section style="background: #fffdfb;">
+    <div style="max-width: 940px; margin: 0 auto; padding: 64px 22px; text-align: center;">
+      <div style="width: 58px; height: 58px; border-radius: 50%; background: #f0dcdb; display: flex; align-items: center; justify-content: center; margin: 0 auto 22px; font-size: 26px; color: #a85f70;">♡</div>
+      <div style="font-size: 12px; letter-spacing: 3px; color: #b08e94; font-weight: 600; margin-bottom: 14px;">SALÁRIO MATERNIDADE</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.5vw, 42px); line-height: 1.15; color: #463c40; margin: 0 0 18px;">
+        Um direito seu. Um apoio para a sua <em style="font-style: italic; color: #a85f70;">tranquilidade.</em>
+      </h2>
+      <p style="font-size: 17px; line-height: 1.7; color: #6a5d60; max-width: 660px; margin: 0 auto; font-weight: 300;">
+        O salário maternidade é um auxílio financeiro garantido por lei durante o período de licença. E existe um momento ideal para garantir o seu: <strong style="font-weight: 600; color: #a85f70;">enquanto você está gestante.</strong> Quanto antes começamos, mais tranquila será a chegada do seu bebê.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== BENEFÍCIOS ===== -->
+  <section style="background: #f7ece9;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: 64px 22px;">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <div style="font-size: 12px; letter-spacing: 3px; color: #b08e94; font-weight: 600; margin-bottom: 12px;">POR QUE COMIGO</div>
+        <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.5vw, 40px); color: #463c40; margin: 0;">O que você ganha ao meu lado</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+
+        <div style="background: #fffdfb; border-radius: 20px; padding: 30px 26px; box-shadow: 0 18px 40px -28px rgba(110,80,80,0.4);">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #f0dcdb; display: flex; align-items: center; justify-content: center; color: #a85f70; font-size: 22px; margin-bottom: 18px;">§</div>
+          <h3 style="font-size: 17px; font-weight: 600; color: #463c40; margin: 0 0 8px;">Direito garantido por lei</h3>
+          <p style="font-size: 14.5px; line-height: 1.6; color: #837577; margin: 0; font-weight: 300;">Um benefício que é seu por direito. Eu garanto que ele chegue até você.</p>
+        </div>
+
+        <div style="background: #fffdfb; border-radius: 20px; padding: 30px 26px; box-shadow: 0 18px 40px -28px rgba(110,80,80,0.4);">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #f0dcdb; display: flex; align-items: center; justify-content: center; color: #a85f70; font-size: 22px; margin-bottom: 18px;">♡</div>
+          <h3 style="font-size: 17px; font-weight: 600; color: #463c40; margin: 0 0 8px;">Auxílio durante a licença</h3>
+          <p style="font-size: 14.5px; line-height: 1.6; color: #837577; margin: 0; font-weight: 300;">Apoio financeiro no período de licença maternidade, quando você mais precisa.</p>
+        </div>
+
+        <div style="background: #fffdfb; border-radius: 20px; padding: 30px 26px; box-shadow: 0 18px 40px -28px rgba(110,80,80,0.4);">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #f0dcdb; display: flex; align-items: center; justify-content: center; color: #a85f70; font-size: 22px; margin-bottom: 18px;">☂</div>
+          <h3 style="font-size: 17px; font-weight: 600; color: #463c40; margin: 0 0 8px;">Mais tranquilidade</h3>
+          <p style="font-size: 14.5px; line-height: 1.6; color: #837577; margin: 0; font-weight: 300;">Para você e a sua família viverem esse momento com paz e segurança.</p>
+        </div>
+
+        <div style="background: #fffdfb; border-radius: 20px; padding: 30px 26px; box-shadow: 0 18px 40px -28px rgba(110,80,80,0.4);">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #f0dcdb; display: flex; align-items: center; justify-content: center; color: #a85f70; font-size: 22px; margin-bottom: 18px;">✦</div>
+          <h3 style="font-size: 17px; font-weight: 600; color: #463c40; margin: 0 0 8px;">Atendimento humanizado</h3>
+          <p style="font-size: 14.5px; line-height: 1.6; color: #837577; margin: 0; font-weight: 300;">Ágil, especializado e próximo. Você fala diretamente comigo, do início ao fim.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section id="como-funciona" style="background: #fffdfb;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: 66px 22px;">
+      <div style="text-align: center; margin-bottom: 46px;">
+        <div style="font-size: 12px; letter-spacing: 3px; color: #b08e94; font-weight: 600; margin-bottom: 12px;">SIMPLES E SEM BUROCRACIA</div>
+        <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.5vw, 40px); color: #463c40; margin: 0;">Como funciona, passo a passo</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; margin-bottom: 44px;">
+
+        <div style="text-align: center; padding: 0 6px;">
+          <div style="width: 62px; height: 62px; border-radius: 50%; background: #a85f70; color: #fff; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 28px; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; box-shadow: 0 12px 24px -10px rgba(168,95,112,0.6);">1</div>
+          <h3 style="font-size: 16px; font-weight: 600; color: #463c40; margin: 0 0 7px;">Fale comigo no WhatsApp</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #837577; margin: 0; font-weight: 300;">É só me chamar. Te explico tudo com calma e tiro suas dúvidas.</p>
+        </div>
+
+        <div style="text-align: center; padding: 0 6px;">
+          <div style="width: 62px; height: 62px; border-radius: 50%; background: #a85f70; color: #fff; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 28px; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; box-shadow: 0 12px 24px -10px rgba(168,95,112,0.6);">2</div>
+          <h3 style="font-size: 16px; font-weight: 600; color: #463c40; margin: 0 0 7px;">Envie os documentos</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #837577; margin: 0; font-weight: 300;">Uma listinha simples — tudo pelo celular, sem sair de casa.</p>
+        </div>
+
+        <div style="text-align: center; padding: 0 6px;">
+          <div style="width: 62px; height: 62px; border-radius: 50%; background: #a85f70; color: #fff; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 28px; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; box-shadow: 0 12px 24px -10px rgba(168,95,112,0.6);">3</div>
+          <h3 style="font-size: 16px; font-weight: 600; color: #463c40; margin: 0 0 7px;">Agende a reunião virtual</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #837577; margin: 0; font-weight: 300;">Conversamos por vídeo, no horário que for melhor para você.</p>
+        </div>
+
+        <div style="text-align: center; padding: 0 6px;">
+          <div style="width: 62px; height: 62px; border-radius: 50%; background: #a85f70; color: #fff; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 28px; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; box-shadow: 0 12px 24px -10px rgba(168,95,112,0.6);">4</div>
+          <h3 style="font-size: 16px; font-weight: 600; color: #463c40; margin: 0 0 7px;">Eu cuido de tudo</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #837577; margin: 0; font-weight: 300;">A partir daí, é comigo. Você só acompanha e fica tranquila.</p>
+        </div>
+
+      </div>
+
+      <!-- documentos -->
+      <div style="background: #f7ece9; border-radius: 24px; padding: 36px clamp(22px, 4vw, 44px); display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+        <div style="flex: 1 1 240px; min-width: 220px;">
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 26px; color: #463c40; margin: 0 0 10px;">Os documentos que vou pedir</h3>
+          <p style="font-size: 14.5px; line-height: 1.6; color: #837577; margin: 0; font-weight: 300;">Separe com calma. Qualquer dúvida sobre algum deles, é só me perguntar — estou aqui para facilitar.</p>
+        </div>
+        <div style="flex: 1 1 280px; min-width: 260px; display: grid; gap: 12px;">
+          <div style="display: flex; align-items: center; gap: 13px; background: #fffdfb; border-radius: 12px; padding: 14px 16px;">
+            <span style="width: 26px; height: 26px; border-radius: 50%; background: #a85f70; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">✓</span>
+            <span style="font-size: 15px; color: #4d4346; font-weight: 500;">Documento de identidade</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 13px; background: #fffdfb; border-radius: 12px; padding: 14px 16px;">
+            <span style="width: 26px; height: 26px; border-radius: 50%; background: #a85f70; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">✓</span>
+            <span style="font-size: 15px; color: #4d4346; font-weight: 500;">Cadastro do Bolsa Família <span style="color: #9c8d8a; font-weight: 400;">ou folha resumo (se tiver)</span></span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 13px; background: #fffdfb; border-radius: 12px; padding: 14px 16px;">
+            <span style="width: 26px; height: 26px; border-radius: 50%; background: #a85f70; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">✓</span>
+            <span style="font-size: 15px; color: #4d4346; font-weight: 500;">Comprovante de residência</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 13px; background: #fffdfb; border-radius: 12px; padding: 14px 16px;">
+            <span style="width: 26px; height: 26px; border-radius: 50%; background: #a85f70; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">✓</span>
+            <span style="font-size: 15px; color: #4d4346; font-weight: 500;">Cartão de gestante</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EMOTIONAL QUOTE BAND ===== -->
+  <section style="background: #a85f70; color: #fff;">
+    <div style="max-width: 860px; margin: 0 auto; padding: 70px 22px; text-align: center;">
+      <div style="font-size: 30px; color: #e7c2c9; margin-bottom: 14px;">♡</div>
+      <p style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic; font-size: clamp(26px, 4.2vw, 40px); line-height: 1.3; margin: 0;">
+        "A tranquilidade de ter o seu bebê e garantir o seu salário maternidade não tem preço."
+      </p>
+      <div style="margin-top: 22px; font-size: 13px; letter-spacing: 2px; color: #eccdd3; font-weight: 500;">SEU DIREITO, NOSSO COMPROMISSO</div>
+    </div>
+  </section>
+
+  <!-- ===== QUEM É A VIVIAN ===== -->
+  <section style="background: #fffdfb;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: 66px 22px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
+
+        <div style="flex: 1 1 280px; min-width: 260px; position: relative;">
+          <div style="position: absolute; inset: auto auto -16px -16px; width: 120px; height: 120px; background: #f0dcdb; border-radius: 50%; z-index: 0;"></div>
+          <image-slot id="vivian-bio" style="display: block; position: relative; z-index: 1; width: 100%; height: auto; aspect-ratio: 1023 / 1537; border-radius: 24px; box-shadow: 0 28px 56px -26px rgba(110,80,80,0.45);" shape="rounded" radius="24" src="foto-perfil.jpg" placeholder="Foto da Vivian Mol"></image-slot>
+        </div>
+
+        <div style="flex: 1 1 360px; min-width: 300px;">
+          <div style="font-size: 12px; letter-spacing: 3px; color: #b08e94; font-weight: 600; margin-bottom: 12px;">QUEM VAI CUIDAR DE VOCÊ</div>
+          <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(34px, 5vw, 48px); color: #463c40; margin: 0 0 16px;">Vivian Mol</h2>
+          <p style="font-size: 16px; line-height: 1.7; color: #6a5d60; margin: 0 0 16px; font-weight: 300;">
+            Advogada há quase 20 anos, <strong style="font-weight: 600; color: #574a4d;">especializada em direito previdenciário.</strong> Afeiçoada a questões humanizadas, não suporta ver injustiças e sempre se sentiu instigada a fazer algo que pudesse mudar a vida das pessoas.
+          </p>
+          <p style="font-size: 16px; line-height: 1.7; color: #6a5d60; margin: 0 0 28px; font-weight: 300;">
+            Hoje, atua com paixão para ajudar suas clientes a conseguirem seus benefícios e terem <strong style="font-weight: 600; color: #a85f70;">dignidade e tranquilidade</strong> — sobretudo em momentos tão especiais como a chegada de um bebê.
+          </p>
+          <div style="display: inline-flex; align-items: center; gap: 12px; background: #f7ece9; border-radius: 14px; padding: 14px 20px;">
+            <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: #a85f70;">Mais que advogar, é fazer a diferença.</span>
+            <span style="color: #cf94a1;">♡</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section style="background: linear-gradient(160deg, #a85f70 0%, #8c4a5b 100%); color: #fff;">
+    <div style="max-width: 760px; margin: 0 auto; padding: 70px 22px; text-align: center;">
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 0 0 16px;">Quer receber o seu <em style="font-style: italic;">salário maternidade?</em></h2>
+      <p style="font-size: 16.5px; line-height: 1.65; color: #f3d8dd; max-width: 520px; margin: 0 auto 32px; font-weight: 300;">
+        Me chame agora no WhatsApp. O melhor momento para garantir o seu direito é enquanto você está gestante.
+      </p>
+      <a href="https://wa.me/5533998740709?text=Ol%C3%A1%20Vivian!%20Estou%20gestante%20e%20gostaria%20de%20receber%20o%20meu%20sal%C3%A1rio%20maternidade." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; background: #fff; color: #2e7d57; text-decoration: none; padding: 18px 34px; border-radius: 100px; font-size: 18px; font-weight: 700; box-shadow: 0 18px 40px -14px rgba(0,0,0,0.4); animation: softPulse 2.6s ease-in-out infinite;">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm-3.6 4.43c-.17 0-.45.06-.68.31-.23.25-.9.88-.9 2.15 0 1.27.92 2.49 1.05 2.66.13.17 1.8 2.75 4.36 3.86.61.26 1.08.42 1.45.54.61.19 1.17.16 1.6.1.49-.07 1.5-.61 1.71-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.17-.49-.3-.25-.13-1.5-.74-1.73-.82-.23-.08-.4-.13-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.38-.78-1.88-.2-.48-.41-.42-.57-.43h-.49z"/></svg>
+        33 99874-0709
+      </a>
+      <div style="margin-top: 20px; font-size: 13.5px; color: #f0cdd3; font-weight: 300;">Atendimento online em qualquer lugar — seu direito não tem distância.</div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background: #564b4a; color: #e8ddda;">
+    <div style="max-width: 1140px; margin: 0 auto; padding: 50px 22px 36px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 36px; justify-content: space-between;">
+
+        <div style="flex: 1 1 240px; min-width: 220px;">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: #6e615f; display: flex; align-items: center; justify-content: center;">
+              <span style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 21px; color: #cf94a1;">AM</span>
+            </div>
+            <div style="line-height: 1.05;">
+              <div style="font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 600; color: #fdf8f6;">Abreu<span style="color: #cf94a1; padding: 0 5px;">|</span>Mol</div>
+              <div style="font-size: 9px; letter-spacing: 4px; color: #b6a6a3;">ADVOGADAS</div>
+            </div>
+          </div>
+          <p style="font-size: 13.5px; line-height: 1.6; color: #c8bbb8; margin: 0; font-weight: 300;">Advocacia especializada e humanizada. Direito previdenciário e salário maternidade.</p>
+          <div style="display: flex; align-items: center; gap: 9px; margin-top: 16px; font-size: 14px; color: #e8ddda;">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+            <span>@vivianmol.adv · @abreumol.adv</span>
+          </div>
+        </div>
+
+        <div style="flex: 1 1 460px; min-width: 280px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+          <div style="background: rgba(255,255,255,0.06); border-radius: 14px; padding: 18px 20px;">
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #f0cdd3; margin-bottom: 6px;"><span style="color: #cf94a1;">●</span> Unidade São José da Safira/MG</div>
+            <div style="font-size: 13.5px; line-height: 1.55; color: #c8bbb8; font-weight: 300;">Rua Manoel Heliotério, 120<br>ao lado da lotérica</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.06); border-radius: 14px; padding: 18px 20px;">
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #f0cdd3; margin-bottom: 6px;"><span style="color: #cf94a1;">●</span> Unidade Marilac/MG</div>
+            <div style="font-size: 13.5px; line-height: 1.55; color: #c8bbb8; font-weight: 300;">Rua Governador Valadares, 220<br>ao lado do CRAS</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="border-top: 1px solid rgba(255,255,255,0.12); margin-top: 34px; padding-top: 22px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center;">
+        <div style="font-size: 13px; color: #b6a6a3; font-weight: 300;">WhatsApp: <strong style="color: #e8ddda; font-weight: 600;">33 99874-0709</strong></div>
+        <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; color: #d8b3ba;">Mais que advogar, é fazer a diferença. ♡</div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
